@@ -1,96 +1,93 @@
 <!DOCTYPE html>
-                <html>
-                    <head>
-                      <link rel="stylesheet" href="background_styles.css">
-                      <link rel="stylesheet" href="styles.css">
-                      <link rel="stylesheet" href="mstyles.css">
-                      <script src="script.js" defer></script>
-                      <title>Paln lekcji</title>
-                      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                    </head>
-                    <body>
-                      <nav class="navbar">
-                        <a href="#" class="toggle-button">
-                          <span class="bar"></span>
-                          <span class="bar"></span>
-                          <span class="bar"></span>
-                        </a>
-                        <div class="navbar-links">
-                          <ul>
-                            <li><a href="planPn.html">Poniedziałek</a></li>
-                            <li><a href="planWt.html">Wtorek</a></li>
-                            <li><a href="planSr.html">Środa</a></li>
-                            <li><a href="planCz.html">Czwartek</a></li>
-                            <li><a href="planPt.html">Piątek</a></li>
-                          </ul>
-                        </div>
-                      </nav>
-                     <p> <h1>
-                    Wtorek</h1> <p><div style="overflow-x:auto;"><table border="1" class="dataframe blueTable">
-  <thead>
-    <tr style="text-align: right;">
-      <th>Godziny</th>
-      <th>Wt Ala</th>
-      <th>Wt Hania</th>
-      <th>Wt Jaś</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>08:00-08:45</td>
-      <td></td>
-      <td></td>
-      <td>Wychowanie fizyczne -ŻukowskiTomasz s.S</td>
-    </tr>
-    <tr>
-      <td>08:55-09:40</td>
-      <td>Matematyka -BłońskaRenata s.37</td>
-      <td>Geografia -GóźdźIwona s.35</td>
-      <td>Język angielski -BaranetskaMarta s.33</td>
-    </tr>
-    <tr>
-      <td>09:50-10:35</td>
-      <td>zastępstwo Historia - GłowackiRadosław</td>
-      <td>Matematyka -BłońskaRenata s.37</td>
-      <td>Język polski -PożaryckaAnna s.32</td>
-    </tr>
-    <tr>
-      <td>10:50-11:35</td>
-      <td>Edukacja dla bezpieczeństwa -Futyma-MazurElżbieta s.33</td>
-      <td>Język polski -PożaryckaAnna s.32</td>
-      <td>Historia -GłowackiRadosław s.36</td>
-    </tr>
-    <tr>
-      <td>11:45-12:30</td>
-      <td>Język hiszpański -BanasikowskaOlga s.34</td>
-      <td>Wychowanie fizyczne -ŻukowskiTomasz s.S</td>
-      <td>Przyroda -Futyma-MazurElżbieta s.33</td>
-    </tr>
-    <tr>
-      <td>12:50-13:35</td>
-      <td>Wychowanie fizyczne -JakubiecTomasz s.S</td>
-      <td></td>
-      <td>Wychowanie fizyczne -ŻukowskiTomasz s.F</td>
-    </tr>
-    <tr>
-      <td>13:55-14:40</td>
-      <td>Wychowanie fizyczne -JakubiecTomasz s.S</td>
-      <td></td>
-      <td>Informatyka -KrzyważniaPiotr s.4</td>
-    </tr>
-    <tr>
-      <td>14:50-15:35</td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>15:45-16:30</td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>          </div>
-                        </body>
-                    </html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Wtorek — plan lekcji</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; background: #f0f0f0; }
+    .top { background: #333; color: #fff; padding: 10px; text-align: center; }
+    .top a { color: #fff; margin: 0 10px; text-decoration: none; font-weight: bold; }
+    .top a:hover { text-decoration: underline; }
+    .title { font-size: 28px; padding: 12px; text-align: center; background: #2e8b57; color: #fff; }
+    .grid { display: flex; flex-wrap: wrap; gap: 8px; padding: 8px; align-items: flex-start; }
+    .child-col { flex: 1 1 280px; min-width: 260px; background: #fff; border: 1px solid #ccc; }
+    .child-banner { background: #2e8b57; color: #fff; text-align: center; padding: 12px 8px; font-size: 22px; font-weight: bold; }
+    .child-banner .klass { display: block; font-size: 32px; margin-top: 4px; }
+    table.day-table { width: 100%; border-collapse: collapse; font-size: 12px; }
+    table.day-table td, table.day-table th { border: 1px solid #ccc; padding: 4px; vertical-align: top; }
+    table.day-table th { background: #eee; }
+    td.nr, td.godz { white-space: nowrap; width: 1%; }
+    td.empty { text-align: center; color: #999; }
+    .footer { font-size: 11px; color: #666; padding: 8px; text-align: center; }
+  </style>
+</head>
+<body>
+  <div class="top"><a href="index.html">Poniedziałek</a><a href="planWt.html">Wtorek</a><a href="planSr.html">Środa</a><a href="planCz.html">Czwartek</a><a href="planPt.html">Piątek</a></div>
+  <div class="title">Wtorek</div>
+  <div class="grid">
+  <div class="child-col">
+    <div class="child-banner">Ali<span class="klass">1EJ</span></div>
+    <table class="day-table">
+      <tr><th>Nr</th><th>Godz</th><th>Lekcja</th></tr>
+      <tr><td class='nr'>0</td><td class='godz'>7:30 - 8:15</td><td class='lekcja'></td></tr>
+<tr><td class='nr'>1</td><td class='godz'>8:15 - 9:00</td><td class='lekcja'>EDB-2/2 (Di) s78</td></tr>
+<tr><td class='nr'>2</td><td class='godz'>9:10 - 9:55</td><td class='lekcja'>ENG-1/2 (Gk) @ / ENG-2/2 (Sm) s44</td></tr>
+<tr><td class='nr'>3</td><td class='godz'>10:05 - 10:50</td><td class='lekcja'>ENG-1/2 (Gk) @ / ENG-2/2 (Sm) s44</td></tr>
+<tr><td class='nr'>4</td><td class='godz'>11:05 - 11:50</td><td class='lekcja'>MAT (Ci) @</td></tr>
+<tr><td class='nr'>5</td><td class='godz'>12:00 - 12:45</td><td class='lekcja'>MAT (Ci) @</td></tr>
+<tr><td class='nr'>6</td><td class='godz'>13:05 - 13:50</td><td class='lekcja'>JO2 #1J</td></tr>
+<tr><td class='nr'>7</td><td class='godz'>14:10 - 14:55</td><td class='lekcja'>CHE (Sl) s52</td></tr>
+<tr><td class='nr'>8</td><td class='godz'>15:00 - 15:45</td><td class='lekcja'></td></tr>
+<tr><td class='nr'>9</td><td class='godz'>15:50 - 16:35</td><td class='lekcja'></td></tr>
+    </table>
+  </div>
+  <div class="child-col">
+    <div class="child-banner">Hania<span class="klass">6A</span></div>
+    <table class="day-table">
+      <tr><th>Nr</th><th>Godz</th><th>Lekcja</th></tr>
+      <tr><td class='nr'>1</td><td class='godz'>08:00 - 08:45</td><td class='lekcja'>dzień wolny szkoły Wychowanie fizyczne -Żukowski Tomasz&nbsp s. S</td></tr>
+<tr><td class='nr'></td><td class='godz'>08:45 - 08:55</td><td class='lekcja'></td></tr>
+<tr><td class='nr'>2</td><td class='godz'>08:55 - 09:40</td><td class='lekcja'>dzień wolny szkoły Matematyka -Błońska Renata&nbsp s. 37</td></tr>
+<tr><td class='nr'></td><td class='godz'>09:40 - 09:50</td><td class='lekcja'></td></tr>
+<tr><td class='nr'>3</td><td class='godz'>09:50 - 10:35</td><td class='lekcja'>dzień wolny szkoły Geografia -Góźdź Iwona&nbsp s. 33</td></tr>
+<tr><td class='nr'></td><td class='godz'>10:35 - 10:50</td><td class='lekcja'></td></tr>
+<tr><td class='nr'>4</td><td class='godz'>10:50 - 11:35</td><td class='lekcja'>dzień wolny szkoły Język angielski -Gałaszewska Agnieszka&nbsp s. 32</td></tr>
+<tr><td class='nr'></td><td class='godz'>11:35 - 11:45</td><td class='lekcja'></td></tr>
+<tr><td class='nr'>5</td><td class='godz'>11:45 - 12:30</td><td class='lekcja'></td></tr>
+<tr><td class='nr'></td><td class='godz'>12:30 - 12:50</td><td class='lekcja'></td></tr>
+<tr><td class='nr'>6</td><td class='godz'>12:50 - 13:35</td><td class='lekcja'></td></tr>
+<tr><td class='nr'></td><td class='godz'>13:35 - 13:55</td><td class='lekcja'></td></tr>
+<tr><td class='nr'>7</td><td class='godz'>13:55 - 14:40</td><td class='lekcja'></td></tr>
+<tr><td class='nr'></td><td class='godz'>14:40 - 14:50</td><td class='lekcja'></td></tr>
+<tr><td class='nr'>8</td><td class='godz'>14:50 - 15:35</td><td class='lekcja'></td></tr>
+<tr><td class='nr'></td><td class='godz'>15:35 - 15:45</td><td class='lekcja'></td></tr>
+<tr><td class='nr'>9</td><td class='godz'>15:45 - 16:30</td><td class='lekcja'></td></tr>
+    </table>
+  </div>
+  <div class="child-col">
+    <div class="child-banner">Jaś<span class="klass">5B</span></div>
+    <table class="day-table">
+      <tr><th>Nr</th><th>Godz</th><th>Lekcja</th></tr>
+      <tr><td class='nr'>1</td><td class='godz'>08:00 - 08:45</td><td class='lekcja'></td></tr>
+<tr><td class='nr'></td><td class='godz'>08:45 - 08:55</td><td class='lekcja'></td></tr>
+<tr><td class='nr'>2</td><td class='godz'>08:55 - 09:40</td><td class='lekcja'>dzień wolny szkoły Geografia -Góźdź Iwona&nbsp s. 33</td></tr>
+<tr><td class='nr'></td><td class='godz'>09:40 - 09:50</td><td class='lekcja'></td></tr>
+<tr><td class='nr'>3</td><td class='godz'>09:50 - 10:35</td><td class='lekcja'>dzień wolny szkoły Wychowanie fizyczne -Żukowski Tomasz&nbsp s. F</td></tr>
+<tr><td class='nr'></td><td class='godz'>10:35 - 10:50</td><td class='lekcja'></td></tr>
+<tr><td class='nr'>4</td><td class='godz'>10:50 - 11:35</td><td class='lekcja'>dzień wolny szkoły Język angielski -Dobrovolska Diana&nbsp s. 34</td></tr>
+<tr><td class='nr'></td><td class='godz'>11:35 - 11:45</td><td class='lekcja'></td></tr>
+<tr><td class='nr'>5</td><td class='godz'>11:45 - 12:30</td><td class='lekcja'>dzień wolny szkoły Matematyka -Błońska Renata&nbsp s. 37</td></tr>
+<tr><td class='nr'></td><td class='godz'>12:30 - 12:50</td><td class='lekcja'></td></tr>
+<tr><td class='nr'>6</td><td class='godz'>12:50 - 13:35</td><td class='lekcja'>dzień wolny szkoły Język angielski -Dobrovolska Diana&nbsp s. 34</td></tr>
+<tr><td class='nr'></td><td class='godz'>13:35 - 13:55</td><td class='lekcja'></td></tr>
+<tr><td class='nr'>7</td><td class='godz'>13:55 - 14:40</td><td class='lekcja'></td></tr>
+<tr><td class='nr'></td><td class='godz'>14:40 - 14:50</td><td class='lekcja'></td></tr>
+<tr><td class='nr'>8</td><td class='godz'>14:50 - 15:35</td><td class='lekcja'></td></tr>
+<tr><td class='nr'></td><td class='godz'>15:35 - 15:45</td><td class='lekcja'></td></tr>
+<tr><td class='nr'>9</td><td class='godz'>15:45 - 16:30</td><td class='lekcja'></td></tr>
+    </table>
+  </div></div>
+  <div class="footer">wygenerowano 2026-09-06 23:02</div>
+</body>
+</html>
